@@ -1,0 +1,51 @@
+[
+    {
+      "id": "2143254367",
+      "name": "Pushups",
+      "info": "Push-ups may seem like a basic exercise that works only your upper arms and chest, but when you do them the right way, they use muscles all over your body. You can do them just about anywhere, they can be adjusted to fit any ability level -- and they’re free!",
+      "requiredTime": 60,
+      "age": "20-35",
+      "img": "https://www.kreedon.com/wp-content/uploads/2021/08/oYDbf5hQAePHEBNZTQMXRA.jpg"
+    },
+    {
+        "id": "7689567586970",
+        "name": "Pull-ups",
+        "info": "To perform a pullup, you start by hanging onto a pullup bar with your palms facing away from you and your body extended fully. You then pull yourself up until your chin is above the bar. Pullups are different than a chinup. With a chinup, your palms and hands face toward you.",
+        "requiredTime": 40,
+        "age": "24-40",
+        "img": "https://www.muscleandperformance.com/wp-content/uploads/2018/03/pull-ups-for-bigger-back.jpg?width=730"
+    },
+    {
+        "id": "78965437u56y454",
+        "name": "Single-leg deadlifts",
+        "info": "What does the single leg deadlift work? The single leg deadlift strengthens the posterior chain namely the glutes, hamstrings, lower back and core muscles. Your balance and movement skills will also be improved with this exercise.",
+        "requiredTime": 60,
+        "age": "24-45",
+        "img": "https://hips.hearstapps.com/hmg-prod/images/2019-menshealth-formcheck-ep38-singlelegdeadlift-ms-mo-edit-v1-00-00-20-15-still007-1568827173.jpg"
+    },
+    {
+        "id": "3456475687099786",
+        "name": "Dumbbell rows",
+        "info": "The dumbbell row primarily hits muscles on your back, but also improves core stability, while engaging muscles on your shoulder, biceps and triceps.",
+        "requiredTime": 50,
+        "age": "24-40",
+        "img": "https://d3h9ln6psucegz.cloudfront.net/wp-content/uploads/2022/03/Dumbbell-Row.jpg"
+    },
+    {
+      "id": "3456475687096579786",
+      "name": "Squats",
+      "info": "Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.",
+      "requiredTime": 60,
+      "age": "24-40",
+      "img": "https://eisnerfitness.com/wp-content/uploads/2021/12/frontsquat.jpg"
+  },
+  {
+    "id": "34564756874568099786",
+    "name": "Bent-over",
+    "info": "The bent over row is a multi-jointed exercise that recruits several different muscles. It improves strength in the upper and lower back, glutes, hamstrings, lats, and shoulders.",
+    "requiredTime": 30,
+    "age": "24-40",
+    "img": "https://www.muscleandfitness.com/wp-content/uploads/2019/03/barbell-bentover-row-1109.jpg?quality=86&strip=all"
+}
+
+]

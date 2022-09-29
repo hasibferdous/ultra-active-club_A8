@@ -1,0 +1,26 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: rgb(3, 22, 10);
+    
+}
+
+.activities-container{
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 100px 50px;
+    color: azure;
+    
+}
+.time-container{
+    background-color: rgb(190, 228, 113);
+}
+
+@media screen and (max-width:1100px) {
+    .activities-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}

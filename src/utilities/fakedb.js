@@ -3,21 +3,21 @@ const addToDb = id =>{
     let shoppingTime = {};
 
     //get the shopping cart from local storage
-    const storedTime = localStorage.getItem('shopping-cart');
+    const storedTime = localStorage.getItem('shopping-time');
     if(storedTime){
         shoppingTime = JSON.parse(storedTime);
     }
 
     // add quantity
-    const quantity = shoppingTime[id];
-    if(quantity){
-        const newQuantity = quantity + 1;
-        shoppingTime[id] = newQuantity;
+    const Time = shoppingTime[id];
+    if(Time){
+        const newTime = Time + 1;
+        shoppingTime[id] = newTime;
     }
     else{
         shoppingTime[id] = 1;
     }
-    localStorage.setItem('shopping-cart', JSON.stringify(shoppingTime));
+    localStorage.setItem('shopping-time', JSON.stringify(shoppingTime));
 }
 
 const getStoredTime = () =>{

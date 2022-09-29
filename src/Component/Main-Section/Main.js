@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-//import { addToDb, getStoredTime } from '../../utilities/fakedb';
+import { addToDb, getStoredTime } from '../../utilities/fakedb';
 import Activity from '../Activity/Activity';
 import Time from '../Time-Duration/Time';
 import './Main.css'
-
+import Note from '../Notes/Note';
 const Main = () => {
         const [activities, setActivities] = useState([]);
         const [time, setTime] = useState([]);
@@ -13,22 +13,25 @@ const Main = () => {
             .then(data =>  setActivities(data))
         }, []);
     
-        // useEffect(() =>{
-        //     //console.log('local Storage first line', activities)
-        //     const storedTime = getStoredTime();
+         useEffect(() =>{
+            console.log('local Storage first line', activities)
+             const storedTime = getStoredTime();
+             console.log(storedTime);
         //     const savedTime = [];
-        //     for(const id in storedTime){
-        //         const addedActivity = activities.find(activity=> activity.id === id);
-        //         if(addedActivity){
-        //             const requiredTime = storedTime[id];
-        //             addedActivity.requiredTime =requiredTime;
-        //             savedTime.push(addedActivity);
-        //         console.log(addedActivity);
-        //         }
-        //     }
-            //setTime(savedTime);
+            // for(const id in storedTime){
+            //     const addedActivity = activities.find(activity=> activity.id === id);
+            //     console.log(addedActivity);
+                        
+            //     if(addedActivity){
+            //         const exerciseTime = storedTime[id];
+            //         addedActivity.exerciseTime =exerciseTime;
+            //         savedTime.push(addedActivity);
+            //      console.log(addedActivity);
+            //      }
+            // }
+            // setTime(savedTime);
     
-        //}, [activities])
+        }, [activities])
     
         const handleAddToTime = (activity) =>{
             //console.log(activity);
@@ -47,8 +50,11 @@ const Main = () => {
             
             // }
             setTime(newTime);
-            // addToDb(selectedActivity.id)
+            addToDb(activity.id)
         }
+
+
+
 
     return (
         <div className='main-container'>
@@ -65,7 +71,9 @@ const Main = () => {
            <div className="time-container">
             
                 <Time time={time}></Time> 
+
            </div>
+                <Note></Note>
         </div>
     );
 };

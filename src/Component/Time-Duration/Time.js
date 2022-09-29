@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Time.css'
-import BreakTime from '../BreakTime/BreakTime';
+
 
 const Time = (props) => {
     const {time} = props;
@@ -12,24 +12,18 @@ const Time = (props) => {
 
     const [breakTime, setBreakTime] = useState(0);
 
-    const handleClick1 = () => {
-        setBreakTime(10);
-    }
-    const handleClick2 = () => {
-        setBreakTime(20);
-    }
-    const handleClick3 = () => {
-        setBreakTime(30);
-    }
-    const handleClick4 = () => {
-        setBreakTime(40);
-    }
-    const handleClick5 = () => {
-        setBreakTime(50);
-    }
+    const handleClick1 = () => {setBreakTime(10);}
+    const handleClick2 = () => {setBreakTime(20);}
+    const handleClick3 = () => {setBreakTime(30);}
+    const handleClick4 = () => {setBreakTime(40);}
+    const handleClick5 = () => {setBreakTime(50);};
+    
+    localStorage.setItem('Break-Time', JSON.stringify(breakTime))
+        localStorage.getItem((breakTime));
+        
+    
 
-    
-    
+
     return (
         <div>
         <div className='name'>
@@ -43,42 +37,30 @@ const Time = (props) => {
         <div className='addBreak'>
             <h2>Add A Break</h2>
             <div className='breakTime'>
-
-        
-
-
             <button onClick={handleClick1} className='btn-time'>
-            <p className='btn-text'>10</p>
+            <p className='btn-text'><b>10</b></p>
             </button>
             <button onClick={handleClick2} className='btn-time'>
-            <p className='btn-text'>20</p>
+            <p className='btn-text'><b>20</b></p>
             </button>
             <button onClick={handleClick3} className='btn-time'>
-            <p className='btn-text'>30</p>
+            <p className='btn-text'><b>30</b></p>
             </button>
             <button onClick={handleClick4} className='btn-time'>
-            <p className='btn-text'>40</p>
+            <p className='btn-text'><b>40</b></p>
             </button>
             <button onClick={handleClick5} className='btn-time'>
-            <p className='btn-text'>50</p>
+            <p className='btn-text'><b>50</b></p>
             </button>
-
-        
             </div>
         </div>
-
         <div className='time'>
-           <h2>Exercise Details</h2>
-            <p>Exercise Time:{exerciseTime}</p> 
-            <p>Break Time:{breakTime}</p>
-            <BreakTime></BreakTime>
+           <h2><b>Exercise Details</b></h2>
+            <p>Exercise Time: {exerciseTime} seconds</p> 
+            <p>Break Time: {breakTime} seconds</p>
             
         </div>
         </div>
     );
 };
-
-
-
-
 export default Time;

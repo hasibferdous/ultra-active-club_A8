@@ -45,3 +45,8 @@
 .btn-time:hover {
     color: orange;
 }
+
+
+.btn-text {
+    font-size: 20px;
+}

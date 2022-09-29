@@ -15,7 +15,8 @@
     
 }
 .time-container{
-    background-color: rgb(190, 228, 113);
+    background-color: rgb(0, 0, 0);
+    color:aliceblue;
 }
 
 @media screen and (max-width:1100px) {

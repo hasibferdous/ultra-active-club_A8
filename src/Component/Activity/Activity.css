@@ -10,9 +10,10 @@
 
 .activity img {
     height: 286px;
-    width: 286px;
+    width: 326px;
     border-radius: 8px;
     margin: 7px ;
+    margin-top: 10px;
 }
 
 .activity-info {
@@ -35,9 +36,10 @@
 
 }
 
-.btn-cart {
+.btn-list {
     width: 100%;
-    background: rgb(206, 177, 62);
+    background: rgb(7, 62, 114);
+    color: aliceblue;
     border: none;
     border-radius: 0px 0px 8px 8px;
     position: absolute;

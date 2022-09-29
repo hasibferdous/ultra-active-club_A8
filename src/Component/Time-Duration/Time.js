@@ -1,12 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Time.css'
+import BreakTime from '../BreakTime/BreakTime';
 
 const Time = (props) => {
     const {time} = props;
-    let requiredTime = 0;
+    //console.log(time);
+     let exerciseTime = 0;
     for (const activity of time){
-        requiredTime = requiredTime +  activity.requiredTime;
+        exerciseTime = exerciseTime +  activity.requiredTime;
     }
+
+    const [breakTime, setBreakTime] = useState(0);
+
+    const handleClick1 = () => {
+        setBreakTime(10);
+    }
+    const handleClick2 = () => {
+        setBreakTime(20);
+    }
+    const handleClick3 = () => {
+        setBreakTime(30);
+    }
+    const handleClick4 = () => {
+        setBreakTime(40);
+    }
+    const handleClick5 = () => {
+        setBreakTime(50);
+    }
+
+    
+    
     return (
         <div>
         <div className='name'>
@@ -20,33 +43,42 @@ const Time = (props) => {
         <div className='addBreak'>
             <h2>Add A Break</h2>
             <div className='breakTime'>
-            <button onClick={()=>props.handleAddToCart(props.product)} className='btn-time'>
+
+        
+
+
+            <button onClick={handleClick1} className='btn-time'>
             <p className='btn-text'>10</p>
             </button>
-            <button onClick={()=>props.handleAddToCart(props.product)} className='btn-time'>
+            <button onClick={handleClick2} className='btn-time'>
             <p className='btn-text'>20</p>
             </button>
-            <button onClick={()=>props.handleAddToCart(props.product)} className='btn-time'>
+            <button onClick={handleClick3} className='btn-time'>
             <p className='btn-text'>30</p>
             </button>
-            <button onClick={()=>props.handleAddToCart(props.product)} className='btn-time'>
+            <button onClick={handleClick4} className='btn-time'>
             <p className='btn-text'>40</p>
             </button>
-            <button onClick={()=>props.handleAddToCart(props.product)} className='btn-time'>
+            <button onClick={handleClick5} className='btn-time'>
             <p className='btn-text'>50</p>
             </button>
 
-
+        
             </div>
         </div>
+
         <div className='time'>
            <h2>Exercise Details</h2>
-            <p>Exercise:{requiredTime}</p> 
-            <p>Break time:{}</p>
+            <p>Exercise Time:{exerciseTime}</p> 
+            <p>Break Time:{breakTime}</p>
+            <BreakTime></BreakTime>
             
         </div>
         </div>
     );
 };
+
+
+
 
 export default Time;

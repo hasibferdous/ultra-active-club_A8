@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 //import { addToDb, getStoredTime } from '../../utilities/fakedb';
 import Activity from '../Activity/Activity';
-//import Time from '../Time-Duration/Time';
+import Time from '../Time-Duration/Time';
 import './Main.css'
 
 const Main = () => {
@@ -31,8 +31,8 @@ const Main = () => {
         //}, [activities])
     
         const handleAddToTime = (activity) =>{
-            console.log(activity);
-            time.push(activity);
+            //console.log(activity);
+            //time.push(activity);
             const newTime = [...time, activity];
             // let newTime = [];
             // const exists = time.find(activity => activity.id === selectedActivity.id);
@@ -63,8 +63,8 @@ const Main = () => {
                 } 
            </div>
            <div className="time-container">
-                <h4>Time: {time.length}</h4>
-                {/* <Time time={time}></Time> */}
+            
+                <Time time={time}></Time> 
            </div>
         </div>
     );

@@ -34,3 +34,30 @@
 .header a:hover {
     color : rgb(238, 222, 194);
 }
+
+@media only screen and (max-width: 600px) {
+    .header {
+        height: 190px;
+        background-color: rgb(175, 245, 231);
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        display: flex;
+        
+        padding-left: 0px;
+        padding-right: 0px;
+    
+    }
+    .nav{  
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    }
+    .nav a {
+        text-decoration: none;
+        display: none;
+        margin-left: -100px;
+        color: rgb(29, 39, 36);
+        
+    }
+}

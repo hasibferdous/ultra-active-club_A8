@@ -25,3 +25,20 @@
     }
     
 }
+
+@media only screen and (max-width: 600px) {
+
+    .main-container{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .activities-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    .time-container{
+        max-width: min-content;
+        margin-left: 60px;
+    }
+}

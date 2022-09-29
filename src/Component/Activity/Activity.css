@@ -57,3 +57,12 @@
 .btn-cart .btn-text {
     margin-right: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .activity{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    }

@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import './Note.css'
 
 const Note = () => {
-
-
-    
-    
     return (
         <div className='notes'>
             <h2>How does React works?</h2>
@@ -16,8 +12,7 @@ const Note = () => {
             Users can create a representation of a DOM node by declaring the Element function in React.
             The syntax of the HTML code above is similar to XML. That said, instead of using the traditional DOM class, React uses className.
             JSX tags have a name, children, and attributes. Numeric values and expressions must be written inside curly brackets. The quotation marks in JSX attributes represent strings, similarly to JavaScript.
-
-In most cases, React is written using JSX instead of standard JavaScript to simplify components and keep code clean.</p>
+            In most cases, React is written using JSX instead of standard JavaScript to simplify components and keep code clean.</p>
             
             <h2>Write down the difference between props and state</h2>
             <p><table>
@@ -59,6 +54,5 @@ In most cases, React is written using JSX instead of standard JavaScript to simp
         </div>
     );
 };
-
 
 export default Note;

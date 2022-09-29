@@ -21,9 +21,6 @@ const Time = (props) => {
     localStorage.setItem('Break-Time', JSON.stringify(breakTime))
         localStorage.getItem((breakTime));
         
-    
-
-
     return (
         <div>
         <div className='name'>

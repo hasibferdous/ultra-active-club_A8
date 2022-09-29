@@ -4,8 +4,6 @@ import './Activity.css';
 const Activity = (props) => {
     //console.log(props.activity)
     const {name, img, info, age, requiredTime} = props.activity;
-    
-
     return (
         <div className='activity'>
              <img src={img} alt=""></img>

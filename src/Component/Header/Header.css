@@ -1,6 +1,6 @@
 .header {
     height: 140px;
-    background-color: rgb(175, 245, 231);
+    background-color: rgb(218, 205, 132);
     color: rgb(0, 0, 0);
     font-size: 22px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -32,7 +32,7 @@
 }
 
 .header a:hover {
-    color : rgb(238, 222, 194);
+    color : rgb(105, 94, 160);
 }
 
 @media only screen and (max-width: 600px) {

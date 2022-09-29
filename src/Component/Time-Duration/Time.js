@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Time.css'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Time = (props) => {
     const {time} = props;
@@ -21,6 +22,8 @@ const Time = (props) => {
     localStorage.setItem('Break-Time', JSON.stringify(breakTime))
         localStorage.getItem((breakTime));
         
+
+        const notify = () => toast("Wow! Congratulation !!");
     return (
         <div>
         <div className='name'>
@@ -57,6 +60,13 @@ const Time = (props) => {
             <p>Break Time: {breakTime} seconds</p>
             
         </div>
+        <div>
+        <div>
+        <button onClick={notify}>
+        <p className='btn-text'>Activity Completed !</p></button>
+        <ToastContainer />
+        </div>
+      </div>
         </div>
     );
 };
